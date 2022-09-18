@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="APP.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="direction: rtl;">
+    <div>
+        <h6>Mode:</h6>
+        <input type="radio" name="Manual" value="Manual" id="manual" selected onclick="pickPumpMode('manual')">Manual
+        <br>
+        <input type="radio" name="Manual" onclick="pickPumpMode('auto')" id="auto" value='Automatic' > Automatic
+        <p></p>
+    </div>
+    <hr>
+    <div>
+        <h6>Pump It UP!</h6>
+        <button style="background-color: green;" id='inflate' onclick="inflateBaloon(pumpMode)">Infliate</button>
+        <button style="background-color: red;" id='deflate' onclick="deflateBaloon(pumpMode)">Deflate</button>
+
+    </div>
+    <hr>
+    <div>
+        <h6>The Ballon</h6>
+        <div style="display: flex;">
+            <img src="BallonsBasket.jpg" alt="">
+            <div id='counter'></div>
+            <div>
+              <input type="color" name="favcolor" id="favcolor" onchange="pickBaloonColor()">
+              <label for="favcolor">Ballon Color</label>
+
+                <span ></span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+span {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border: none;
+    border-radius: 50%;
+    
+}
+
+.unvisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+h6{
+    font-size: x-large;
+    margin-inline-start: 0px;
+    margin-inline-start: 0;
+    margin: 0;
+}
+
+#counter {
+    
+    height: 50px;
+    width: 30px;
+    position: relative;
+    left: 178px;
+    top: 302px;
+    background-color: white;
+    text-align-last: center;
+    font-size: xxx-large;
+    
+}
